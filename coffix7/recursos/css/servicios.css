@@ -1,0 +1,184 @@
+.filtro-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+}
+.filtro-servicios input, .filtro-servicios select, .filtro-servicios button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.lista-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.tarjeta-servicio {
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+}
+.servicio-media img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.servicio-info {
+    padding: 15px;
+}
+.servicio-datos span {
+    margin-right: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+.servicio-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #555;
+}
+.foto-publicador {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.servicio-precio strong {
+    color: var(--color-acento);
+    font-size: 1.2rem;
+}
+.boton-detalle {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--color-primario);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.contenedor-detalle-servicio {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.detalle-contenido {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.servicio-galeria {
+    flex: 1;
+    min-width: 40%;
+}
+.imagen-principal-detalle {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+.galeria-miniaturas {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+.galeria-miniaturas img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+.galeria-miniaturas img:hover {
+    border-color: var(--color-primario);
+}
+.servicio-informacion {
+    flex: 1;
+}
+.boton-contacto {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.servicio-acciones a, .servicio-acciones button {
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.boton-editar {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+}
+.boton-eliminar-servicio {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor-gestion-admin {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.menu-admin {
+    margin-bottom: 20px;
+}
+.boton-admin {
+    padding: 10px 15px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.tabla-servicios-admin {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tabla-servicios-admin th, .tabla-servicios-admin td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.estado-eliminado { color: #c0392b; font-weight: bold; }
+.estado-activo { color: #27ae60; }
+
+.fila-eliminar-admin {
+    background-color: #ffebee;
+}
+.fila-eliminar-admin button.boton-eliminar {
+    background-color: #c0392b;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}

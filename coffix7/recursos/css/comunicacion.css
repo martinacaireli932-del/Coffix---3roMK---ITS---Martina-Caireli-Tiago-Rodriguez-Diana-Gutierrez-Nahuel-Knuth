@@ -1,0 +1,190 @@
+.contenedor-notificaciones {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.notificacion-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, border-left 0.3s;
+    border-left: 5px solid #ccc;
+}
+
+.notificacion-item:hover {
+    background-color: #f7f7f7;
+}
+
+.notificacion-item p {
+    margin: 0;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.notificacion-fecha-hora {
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+.notificacion-acciones {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.notificacion-acciones button,
+.notificacion-acciones .etiqueta-recordatorio,
+.notificacion-acciones .estado-reserva {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+    display: inline-block;
+}
+.btn-aceptar { 
+    background-color: #28a745; 
+    color: white; 
+}
+.btn-rechazar { 
+    background-color: #dc3545; 
+    color: white; 
+}
+.btn-ver-chat { 
+    background-color: #007bff; 
+    color: white; 
+}
+.estado-reserva {
+    background-color: #e9ecef;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.notificacion-item.notif-recordatorio {
+    background-color: #fff3cd;
+    border-left-color: #ffc107;
+    font-weight: bold;
+}
+
+.etiqueta-recordatorio {
+    background-color: #ffc107;
+    color: #343a40;
+}
+.notificacion-item.notif-solicitud {
+    background-color: #e6f7ff;
+    border-left-color: #007bff;
+}
+
+.notificacion-item.notif-aceptada {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+}
+.notificacion-item.notif-rechazada {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cerrar-chat-modal { 
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar-chat-modal:hover,
+.cerrar-chat-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#chat-historial {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.mensaje-item {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.mensaje-emisor { 
+    background-color: #007bff;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.mensaje-receptor {
+    background-color: #e9ecef;
+    color: #333;
+    margin-right: auto;
+    text-align: left;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input-area textarea {
+    flex-grow: 1;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chat-hora {
+    display: block;
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 2px;
+}
+.mensaje-emisor .chat-hora {
+    color: #ccc;
+}

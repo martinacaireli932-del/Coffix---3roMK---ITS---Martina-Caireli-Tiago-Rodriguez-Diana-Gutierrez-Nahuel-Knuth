@@ -1,0 +1,33 @@
+.contenedor-calendario {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+#fullCalendar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.fc-event-title {
+    font-size: 0.85em;
+    white-space: normal;
+    font-weight: 600;
+}
+
+.fc-header-toolbar .fc-button {
+    background-color: #6e4c44;
+    border-color: #5a3c36;
+    color: #fff;
+}
+
+.fc-header-toolbar .fc-button:hover {
+    background-color: #5a3c36;
+    border-color: #5a3c36;
+}
+.fc-col-header-cell-cushion {
+    color: #333;
+    font-weight: bold;
+}

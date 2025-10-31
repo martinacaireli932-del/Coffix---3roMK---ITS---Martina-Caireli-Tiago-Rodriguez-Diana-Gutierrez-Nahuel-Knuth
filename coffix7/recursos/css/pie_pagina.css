@@ -1,0 +1,9 @@
+.pie-pagina {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    width: 100%;
+    box-shadow: 0 -2px 5px var(--color-sombra);
+}

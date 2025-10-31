@@ -1,0 +1,110 @@
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2001;
+    box-shadow: 0 2px 5px var(--color-sombra);
+}
+
+.nombre-pagina {
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu-btn, .buscador-icono {
+    background: none;
+    border: none;
+    color: var(--color-texto-claro);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buscador-container {
+    display: flex;
+    align-items: center;
+    background-color: #382c27;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.buscador {
+    border: none;
+    background: none;
+    color: var(--color-texto-claro);
+    padding: 5px;
+    outline: none;
+    min-width: 200px;
+}
+.buscador::placeholder {
+    color: var(--color-secundario);
+}
+
+.usuario-logueado {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: var(--color-primario);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px var(--color-sombra);
+}
+
+.sidebar .cerrar-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    font-size: 1.8rem;
+    color: var(--color-texto-claro);
+    padding: 0;
+}
+
+.sidebar h3 {
+    padding: 15px 32px;
+    color: var(--color-secundario);
+    border-bottom: 1px solid #6c544d;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--color-texto-claro);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #6c544d;
+}
+.sidebar-abierto .contenedor-principal {
+    filter: blur(4px); 
+    transition: filter 0.3s ease-in-out; 
+    pointer-events: none;
+    transform: scale(1); 
+}
+
+.contenedor-principal {
+    filter: blur(0);
+    transition: filter 0.3s ease-in-out;
+}

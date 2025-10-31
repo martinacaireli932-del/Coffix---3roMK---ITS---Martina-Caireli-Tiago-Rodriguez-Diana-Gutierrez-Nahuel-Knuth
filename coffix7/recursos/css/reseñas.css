@@ -1,0 +1,117 @@
+.contenedor-formulario-reseña {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contenedor-formulario-reseña h4 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+}
+
+.grupo-input-calificacion {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.estrellas {
+    direction: rtl;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+}
+.estrellas input { 
+    display: none; 
+}
+.estrellas label {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0 2px;
+}
+.estrellas label:hover,
+.estrellas label:hover ~ label {
+    color: orange;
+}
+.estrellas input:checked ~ label {
+    color: gold;
+}
+
+.boton-enviar-reseña {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.boton-enviar-reseña:hover {
+    background-color: #4cae4c;
+}
+
+.lista-comentarios {
+    margin-top: 20px;
+}
+
+.comentario-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.comentario-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.foto-perfil-reseña {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.nombre-usuario-reseña {
+    color: #333;
+    font-weight: bold;
+}
+
+.fecha-reseña {
+    margin-left: 10px;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.comentario-calificacion { 
+    margin-bottom: 8px; 
+    font-size: 1.1em; 
+}
+
+.comentario-calificacion span {
+    color: gold;
+}
+
+.alerta {
+    padding: 10px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    border-radius: 4px;
+    margin: 15px 0;
+}

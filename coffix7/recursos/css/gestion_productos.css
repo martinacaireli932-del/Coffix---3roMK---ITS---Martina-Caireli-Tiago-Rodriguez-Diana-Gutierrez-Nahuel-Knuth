@@ -1,0 +1,97 @@
+.contenedor-formulario-producto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor-formulario-producto h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.formulario-gestion label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario-gestion input[type="text"],
+.formulario-gestion input[type="number"],
+.formulario-gestion select,
+.formulario-gestion textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.imagen-actual-form {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.nota-imagen {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.campo-doble {
+    display: flex;
+    gap: 20px;
+}
+
+.campo-doble .sub-campo {
+    flex: 1;
+}
+
+.grupo-botones {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.boton-primario, .boton-secundario {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-primario {
+    background-color: #5cb85c;
+    color: white;
+}
+.boton-primario:hover {
+    background-color: #4cae4c;
+}
+
+.boton-secundario {
+    background-color: #f0ad4e;
+    color: white;
+    margin-left: 10px;
+}
+.boton-secundario:hover {
+    background-color: #ec971f;
+}
+
+.grupo-campo input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
